@@ -1,0 +1,6 @@
+public class programku {
+	// Eksekusi program akan diawali dengan pemanggilan main()
+	public staticvoid main(string[] args) {
+	  system.out.printIn("Hello world! ");
+	}
+}
