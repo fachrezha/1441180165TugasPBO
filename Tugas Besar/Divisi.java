@@ -8,12 +8,13 @@ import java.util.ArrayList;
 public class Divisi {
     private String namaDivisi;
     ArrayList<Klub> daftarKlub = new ArrayList<Klub>();
-
     public Divisi(String namaDivisi) {
         this.namaDivisi = namaDivisi;
+
     }
 
     public String getNamaDivisi() {
+        System.out.println("Nama Divisi");
         return namaDivisi;
     }
 

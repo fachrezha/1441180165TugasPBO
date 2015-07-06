@@ -7,9 +7,9 @@ import java.util.ArrayList;
  */
 public class Liga {
     private String namaLiga;
-    ArrayList<Divisi> daftarDivisi = new ArrayList<Divisi>();
     private Klub daftarKlub;
-
+    ArrayList<Divisi> daftarDivisi = new ArrayList<Divisi>();
+    ArrayList<Divisi> namaDivisi = new ArrayList<Divisi>();
 
 
     public Liga(String namaLiga) {
@@ -45,6 +45,14 @@ public class Liga {
 
     public void setDaftarKlub(Klub daftarKlub) {
         this.daftarKlub = daftarKlub;
+    }
+
+    public ArrayList<Divisi> getNamaDivisi() {
+        return namaDivisi;
+    }
+
+    public void setNamaDivisi(Divisi namaDivisi) {
+        this.namaDivisi.add(namaDivisi);
     }
 
     @Override

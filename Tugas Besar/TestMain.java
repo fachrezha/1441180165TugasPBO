@@ -28,6 +28,8 @@ public class TestMain {
         adelante.setDaftarKlub(barcelonaB);
         adelante.setDaftarKlub(atletico);
 
+        spanyol.setNamaDivisi(bbva);
+
         System.out.println("Tugas Besar PBO");
         System.out.println("_______________");
         System.out.println("");
@@ -35,18 +37,22 @@ public class TestMain {
 
 //        No 1(Get daftar Divisi by nama Liga)
         System.out.println("Nomer 1");
-        System.out.println(spanyol.getDaftarDivisi());
+        System.out.println(spanyol.getNamaLiga());
+        System.out.println(spanyol.getNamaDivisi());
         System.out.println("");
 
 //        No 2(Get daftar Klub by nama Liga)
         System.out.println("Nomer 2");
         spanyol.setDaftarKlub(realMadrid);
+        System.out.println(spanyol.getNamaLiga());
         System.out.println(spanyol.getDaftarKlub());
         System.out.println("");
 
 //        No 3(Get daftar Klub by nama Divisi)
         System.out.println("Nomer 3");
+        System.out.println(bbva.getNamaDivisi());
         System.out.println(bbva.getDaftarKlub());
+        System.out.println(adelante.getNamaDivisi());
         System.out.println(adelante.getDaftarKlub());
         System.out.println("");
 
