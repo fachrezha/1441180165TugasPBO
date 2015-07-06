@@ -6,10 +6,14 @@ import java.util.ArrayList;
  * Created by Lenovo on 7/2/2015.
  */
 public class Liga {
+
     private String namaLiga;
     private Klub daftarKlub;
+    private Divisi divisi;
+
     ArrayList<Divisi> daftarDivisi = new ArrayList<Divisi>();
     ArrayList<Divisi> namaDivisi = new ArrayList<Divisi>();
+
 
 
     public Liga(String namaLiga) {
@@ -51,14 +55,15 @@ public class Liga {
         return namaDivisi;
     }
 
-    public void setNamaDivisi(Divisi namaDivisi) {
-        this.namaDivisi.add(namaDivisi);
+    public void setNamaDivisi(Divisi divisi) {
+        this.namaDivisi.add(divisi);
     }
 
     @Override
     public String toString() {
         return "Liga{" +
                 "namaLiga='" + namaLiga + '\'' +
+                ", daftarKlub=" + daftarKlub +
                 '}';
     }
 }

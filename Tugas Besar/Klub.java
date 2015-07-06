@@ -4,9 +4,12 @@ package com.rezha.project1;
  * Created by Lenovo on 7/2/2015.
  */
 public class Klub {
+
     private String namaKlub;
     private Divisi divisi;
     private Liga liga;
+
+
 
     public Klub(String namaKlub) {
         this.namaKlub = namaKlub;

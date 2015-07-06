@@ -7,6 +7,7 @@ public class TestMain {
     public static void main(String[] args) {
 //      Membuat Objek
         Liga spanyol = new Liga("Espanyol");
+        Liga inggris = new Liga("Inggris");
 
         Divisi bbva = new Divisi("BBVA");
         Divisi adelante = new Divisi("Adelante");
@@ -14,13 +15,12 @@ public class TestMain {
         Klub realMadrid = new Klub("Real Madrid",bbva,spanyol);
         Klub barcelona = new Klub("Barcelona",bbva,spanyol);
 
-        Klub barcelonaB = new Klub("Barcelona B",adelante,spanyol);
-        Klub atletico = new Klub("Atletico Madrid",adelante,spanyol);
+        Klub barcelonaB = new Klub("Barcelona B",adelante,inggris);
+        Klub atletico = new Klub("Atletico Madrid",adelante,inggris);
 
 
         spanyol.setDaftarDivisi(bbva);
-        spanyol.setDaftarDivisi(adelante);
-
+        inggris.setDaftarDivisi(adelante);
 
         bbva.setDaftarKlub(realMadrid);
         bbva.setDaftarKlub(barcelona);
@@ -28,31 +28,35 @@ public class TestMain {
         adelante.setDaftarKlub(barcelonaB);
         adelante.setDaftarKlub(atletico);
 
-        spanyol.setNamaDivisi(bbva);
-
         System.out.println("Tugas Besar PBO");
         System.out.println("_______________");
         System.out.println("");
 
 
+
+        System.out.println("");
+
+//      dengan parameter: dari liga memanggil semua klub dari liga
+        System.out.println("Tambahan :");
+        System.out.println("Menggunakan Parameter..");
+        System.out.println(bbva.getDaftarKlub(bbva));
+
+        System.out.println("");
+
 //        No 1(Get daftar Divisi by nama Liga)
         System.out.println("Nomer 1");
-        System.out.println(spanyol.getNamaLiga());
-        System.out.println(spanyol.getNamaDivisi());
+        System.out.println(spanyol.getDaftarDivisi());
         System.out.println("");
 
 //        No 2(Get daftar Klub by nama Liga)
         System.out.println("Nomer 2");
         spanyol.setDaftarKlub(realMadrid);
-        System.out.println(spanyol.getNamaLiga());
         System.out.println(spanyol.getDaftarKlub());
         System.out.println("");
 
 //        No 3(Get daftar Klub by nama Divisi)
         System.out.println("Nomer 3");
-        System.out.println(bbva.getNamaDivisi());
         System.out.println(bbva.getDaftarKlub());
-        System.out.println(adelante.getNamaDivisi());
         System.out.println(adelante.getDaftarKlub());
         System.out.println("");
 
